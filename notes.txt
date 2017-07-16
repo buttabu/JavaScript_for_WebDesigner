@@ -1,0 +1,159 @@
+DOM => Document Object Model
+	is your way of accessing the outline of a page
+	collection of methods and properties
+
+Has a lot of methods
+	methods:
+		document.getELementByID (global object => Document)
+	properties:
+		value => get the vaue of text field and other elements
+		checked => property of check and select boxes
+		classname, id => any element
+
+document.getELementByID().value => prints the value of the ID
+documents.forms[] => print the form incicating at specific indexes
+
+if a form has an id, search with => document.getElementById().elements => elements => becuase form has elements
+
+document.getElementById().options => is an array of all option
+document.getElementById().selectedIndex => gives the numeric index in the array
+document.getElementById().checked => checks if a checkbox is checked or not (Only for checkboxes)
+(only for radio buttons(only one choice is chosen)) document.querySelector[mostly for CSS3]('input[name=...]:checked[filter]').value
+
+Events:
+	which let us respond to actions the user takes on our page
+	to add Events in JS:
+			use document.getElementById('').addEventListener('type of event that we are listening for', function(){ })
+
+	arguments (event) in the event function makes available an argument for the event that was fired
+
+	event.preventDefault() => when the form is submitted nothing will happen expcept for what we define in our function
+	
+
+Check for all inputs are valid:
+		use if statements:
+				if (document.getElementById(''). value === ''){ alert("")}
+		set keyboard focus on the field:
+			document.getElementById('').focus();
+
+make sure submit button is not pressed until the required field is entered:
+			listen for when page itself loads:
+				use document..addEventListener('DOMContentLoaded', function(){
+					btn.disabled = true; 
+				 })
+How to tell browser if the number is not a string:
+		parseInt(document.getElementById(),radix)
+to set a default calue of your variable use pipes || 0
+
+toFixed(2) => function for decimals
+
+innerHTML => return the text with the HTML tags
+
+textContent => return the text without the HTML tags
+
+Date and Time in JavaScript:
+		document.addEventListener('DOMContentListner',functio(){
+
+		get the id by using documnet.get... and store it in a variable..
+
+		then use the variable and use the innerHTML on it c.innerHTML = ''
+
+		tool we used is dateObject
+
+		var d = new Date(); no argument => give the time now
+
+		then d.toTimeString()
+
+		to chopoff the whole time:
+				we can use .substr(startingpoint, endpoint)
+		d.getDate()  => for the date
+		
+		d.getMonth()  => for the Month
+
+		d.getHours()  => for the Hours
+
+		d.getMinutes()  => for the Minutes
+
+		to get the hours in 12 hours format....use if statement
+			});
+
+window timers: to make sure the time is always right
+	2 functions: setTimeout, setInterval..
+
+	setTimeout () => takes 2 arguments, first is the function that you want to execute at some later time..
+	second argument is how much later you want it to execute
+
+setInterval() => to update the time every second
+
+how to make flashing colon in the clock...
+		store the seconds in a variable.
+
+		use if statement and module operator
+
+		if it is odd then it is ' '
+		else ':'
+
+		then print it using innerHTML
+
+How to show AM/PM:
+
+variable => set to 'AM'
+
+if statement => if hours > 12 => then 'PM'
+
+
+time for midnight:
+		how to fix it
+			if (hours ===0)
+				hours = 12
+
+
+
+API:
+	Application Programming Interface
+	use someone else resources
+
+	GOOGLE MAP API
+	-go to google developer site
+	-start the process of intializing their APIs
+	-javascript API -> Get A key
+	-Create a new Project
+
+	store the API key in a variable:
+
+	var key = 'Key';
+	click on GUIDES...
+
+	Change the center points
+	click on references page
+				Geocoder class => can convert an address to latitude and longitude
+
+	MAP types:
+			mapTypeID:google.maps.MapTypeId.hybrid
+
+	Zoom: map.getZoom();
+		map.getCenter();
+		map.getCenter().lat();
+
+
+	stop draggable:
+		draggable : false
+	stop scroll:
+		scrollwheel: false
+
+	Add a marker:
+		Click Simple Markers:
+		create a new marker
+
+
+	Add a popup to a marker:
+		called info Window
+		this is an event listener
+		
+
+
+
+
+	
+
+

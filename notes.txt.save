@@ -1,0 +1,33 @@
+DOM => Document Object Model
+	is your way of accessing the outline of a page
+	collection of methods and properties
+
+Has a lot of methods
+	methods:
+		document.getELementByID (global object => Document)
+	properties:
+		value => get the vaue of text field and other elements
+		checked => property of check and select boxes
+		classname, id => any element
+
+document.getELementByID().value => prints the value of the ID
+documents.forms[] => print the form incicating at specific indexes
+
+if a form has an id, search with => document.getElementById().elements => elements => becuase form has elements
+
+document.getElementById().options => is an array of all option
+document.getElementById().selectedIndex => gives the numeric index in the array
+document.getElementById().checked => checks if a checkbox is checked or not (Only for checkboxes)
+(only for radio buttons(only one choice is chosen)) document.querySelector[mostly for CSS3]('input[name=...]:checked[filter]').value
+
+Events:
+	which let us respond to actions the user takes on our page
+	to add Events in JS:
+			use document.getElementById('').addEventListener('type of event that we are listening for', function(){ })
+
+	arguments (event) in the event function makes available an argument for the event that was fired
+
+	event.preventDefault() => when the form is submitted nothing will happen expcept for what we define in our function
+		
+
+Mkae Sure all the fields are entered..
